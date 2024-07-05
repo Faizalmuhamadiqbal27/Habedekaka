@@ -34,7 +34,7 @@ body, html{
 	right:0;
 	background:#fcbb5e;
 	z-index: 3;
-	animation:firstSlideRemove 1000ms ease 6s 1 forwards;
+	animation:firstSlideRemove 2000ms ease 6s 1 forwards;
 }
 
 @keyframes firstSlideRemove{
@@ -56,13 +56,13 @@ body, html{
 	left:50%;
 	top:45%;
 	transform:translate(-50%,-45%);
-	animation:firstSlideOver 500ms ease 2000ms 1  forwards;
+	animation:firstSlideOver 2000ms ease 2000ms 1  forwards;
 }
 
 .first--slide .slide--content h1{
 	position: relative;
-	animation: firstSlideTextOne 500ms ease 0s 1 forwards;
-	font-size: 1em;
+	animation: firstSlideTextOne 2000ms ease 0s 1 forwards;
+	font-size: 2em;
 	margin:0;
 	line-height: 1em;
 	opacity: 0;
@@ -72,12 +72,12 @@ body, html{
 .first--slide .slide--content h2{
 	position: relative;
 	color:#fcbb5e;
-	font-size:2em;
+	font-size:3em;
 	line-height: 1em;
 	margin:0;
 	top:-1.6em;
 	opacity: 0;
-	animation:  firstSlideTextTwo 500ms ease 350ms 1 forwards;
+	animation:  firstSlideTextTwo 2000ms ease 3000ms 1 forwards;
 }
 
 .first--slide span{
@@ -91,7 +91,7 @@ body, html{
 	top:0;
 	width:0px;
 	height:2px;
-	animation:firstSlideBorderOne 300ms ease 650ms 1 forwards;
+	animation:firstSlideBorderOne 2000ms ease 3000ms 1 forwards;
 }
 
 .first--slide span.right{
@@ -99,7 +99,7 @@ body, html{
 	top:0;
 	width:2px;
 	height: 0;
-	animation:firstSlideBorderTwo 300ms ease 950ms 1 forwards;
+	animation:firstSlideBorderTwo 2000ms ease 3000ms 1 forwards;
 }
 
 .first--slide span.bottom{
@@ -107,7 +107,7 @@ body, html{
 	bottom:0;
 	width:0px;
 	height: 2px;
-	animation:firstSlideBorderOne 300ms ease 1250ms 1 forwards;
+	animation:firstSlideBorderOne 2000ms ease 3000ms 1 forwards;
 }
 
 .first--slide span.left{
@@ -115,7 +115,7 @@ body, html{
 	bottom:0;
 	height: 0;
 	width: 2px;
-	animation:firstSlideBorderTwo 300ms ease 1550ms 1 forwards;
+	animation:firstSlideBorderTwo 2000ms ease 3000ms 1 forwards;
 }
 
 .slide--content::after{
@@ -129,7 +129,7 @@ body, html{
 	left:-75px;
 	top:-75px;
 	transform:scale(0);
-	animation: firstSlideOverlayOne 700ms ease 1850ms 1 forwards,
+	animation: firstSlideOverlayOne 2000ms ease 3000ms 1 forwards,
 	firstSlideOverlayTwo 1000ms ease 2150ms 1 forwards;
 }
 
