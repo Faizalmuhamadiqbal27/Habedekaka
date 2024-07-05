@@ -34,7 +34,7 @@ body, html{
 	right:0;
 	background:#fcbb5e;
 	z-index: 3;
-	animation:firstSlideRemove 2000ms ease 6s 1 forwards;
+	animation:firstSlideRemove 5000ms ease 6s 1 forwards;
 }
 
 @keyframes firstSlideRemove{
