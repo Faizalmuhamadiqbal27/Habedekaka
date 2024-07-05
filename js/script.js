@@ -10,18 +10,40 @@ if (c != null) {
     document.getElementById("name").innerHTML = c;
     document.getElementById("nae").innerHTML = c;
 }
-$(".main").fadeOut(1);
-$('#play').click(function () {
-    $(".loader").fadeOut(1500);
-    $(".main").fadeIn("slow");
-    sf.destroy();
-    $('.balloon-border').animate({
-        top: -500
-    }, 8000);
-    var audio = $('.song')[0];
-    audio.play();
+$(document).ready(function () {
+    // Cek apakah halaman berasal dari index2.html
+    if (sessionStorage.getItem('fromIndex2') === 'true') {
+        // Hapus status dari sessionStorage
+        sessionStorage.removeItem('fromIndex2');
 
+        // Sembunyikan .main terlebih dahulu
+        $(".loader").fadeOut("1");
+
+        // Set timeout untuk menampilkan .main setelah 17 detik
+        setTimeout(function () {
+            $(".loader").fadeOut("1"); // Sembunyikan loader terlebih dahulu
+            $(".main").fadeIn("fast"); // Tampilkan .main dengan efek fadeIn
+        }, 17000);
+    }
+
+    $('#play').click(function () {
+        // Sembunyikan loader dan navigasikan ke index2.html
+        $(".loader").fadeOut(1500);
+        window.location.href = 'index2.html';
+
+        // Lakukan operasi lainnya seperti sf.destroy(), animasi, dan pemutaran audio
+        sf.destroy();
+        $('.main').animate({
+            top: -500
+        }, 1000);
+        var audio = $('.song')[0];
+        audio.play();
+
+        // Simpan status to sessionStorage
+        sessionStorage.setItem('fromIndex2', 'true');
+    });
 });
+
 var typed = new Typed("#typed", {
     stringsElement: '#typed-strings',
     typeSpeed: 30,
