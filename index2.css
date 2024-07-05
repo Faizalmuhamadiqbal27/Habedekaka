@@ -34,7 +34,7 @@ body, html{
 	right:0;
 	background:#fcbb5e;
 	z-index: 3;
-	animation:firstSlideRemove 500ms ease 6s 1 forwards;
+	animation:firstSlideRemove 1000ms ease 6s 1 forwards;
 }
 
 @keyframes firstSlideRemove{
@@ -129,8 +129,8 @@ body, html{
 	left:-75px;
 	top:-75px;
 	transform:scale(0);
-	animation: firstSlideOverlayOne 300ms ease 1850ms 1 forwards,
-	firstSlideOverlayTwo 500ms ease 2150ms 1 forwards;
+	animation: firstSlideOverlayOne 700ms ease 1850ms 1 forwards,
+	firstSlideOverlayTwo 1000ms ease 2150ms 1 forwards;
 }
 
 @keyframes firstSlideTextOne{
@@ -212,7 +212,7 @@ body, html{
 	top:50%;
 	transform:translateY(-50%);
 	letter-spacing: 0.1em;
-	animation:secondSlideMoveUp 300ms ease 750ms 1 forwards,
+	animation:secondSlideMoveUp 600ms ease 1000ms 1 forwards,
 	secondSlideOver 1s ease 2.5s 1 forwards ;
 }
 
