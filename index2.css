@@ -129,8 +129,8 @@ body, html{
 	left:-75px;
 	top:-75px;
 	transform:scale(0);
-	animation: firstSlideOverlayOne 1000ms ease 5000ms 1 forwards,
-	firstSlideOverlayTwo 2000ms ease 5000ms 1 forwards;
+	animation: firstSlideOverlayOne 300ms ease 1850ms 1 forwards,
+	firstSlideOverlayTwo 500ms ease 2150ms 1 forwards;
 }
 
 @keyframes firstSlideTextOne{
