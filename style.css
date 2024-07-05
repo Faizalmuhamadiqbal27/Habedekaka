@@ -75,9 +75,9 @@ img {
 
 .area {
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: #C4515C;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 700;
     text-transform: uppercase;
     animation: spin 2s ease-out infinite;
