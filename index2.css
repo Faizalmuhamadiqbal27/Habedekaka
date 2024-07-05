@@ -634,7 +634,7 @@ body, html{
 	margin:0;
 	text-align: center;
     	justify-content: center;
-	font-size:5em;
+	font-size:3.5em;
 }
 
 .third--canvas .center--line h1 > span{
@@ -706,7 +706,7 @@ body, html{
 }
 
 .third--canvas > img#gf1{
-	left:25%;
+	left:15%;
 }
 
 .third--canvas > img#gf2{
@@ -716,7 +716,7 @@ body, html{
 }
 
 .third--canvas > img#gf3{
-	left:45%;
+	left:55%;
 	animation-delay: 5300ms;
 }
 
