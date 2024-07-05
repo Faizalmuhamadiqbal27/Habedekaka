@@ -56,7 +56,7 @@ body, html{
 	left:50%;
 	top:45%;
 	transform:translate(-50%,-45%);
-	animation:firstSlideOver 2000ms ease 2000ms 1  forwards;
+	animation:firstSlideOver 2000ms ease 5000ms 1  forwards;
 }
 
 .first--slide .slide--content h1{
