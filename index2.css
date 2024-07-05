@@ -261,7 +261,7 @@ body, html{
 .slide--content--one h1.second{
 	top:3em;
 	color:#fcbb5e;
-	font-size: 6em;
+	font-size: 3em;
 	opacity: 0;
 	animation: secondSlideTextFour 300ms ease 1200ms 1 forwards;
 }
