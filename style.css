@@ -127,3 +127,24 @@ img {
     position: absolute;
     padding-top: 300px;
 }
+/* Menggunakan media queries untuk resolusi smartphone */
+@media only screen and (max-width: 768px) {
+    .loader button {
+        width: 50%; /* Ubah lebar tombol */
+        height: 70px; /* Sesuaikan tinggi tombol */
+        font-size: 30px; /* Ukuran font lebih kecil */
+        padding: 10px; /* Padding lebih sedikit */
+    }
+
+    .area {
+        font-size: 50px; /* Ukuran font area */
+    }
+
+    .type-wrap {
+        font-size: 20px; /* Ukuran font dalam type-wrap */
+    }
+
+    .cake {
+        padding-top: 200px; /* Padding atas lebih sedikit */
+    }
+}
