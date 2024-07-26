@@ -16,7 +16,7 @@ $(document).ready(function () {
                 console.log("Audio element found:", audio); // Log debug
 
                 // Coba set currentTime sebelum play
-                audio.currentTime = 30;
+                audio.currentTime = 32;
                 var playPromise = audio.play();
                 if (playPromise !== undefined) {
                     playPromise.then(function() {
