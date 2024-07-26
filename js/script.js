@@ -31,13 +31,22 @@ $(document).ready(function () {
         $(".loader").fadeOut(1500);
         window.location.href = 'index2.html';
 
-        // Lakukan operasi lainnya seperti sf.destroy(), animasi, dan pemutaran audio
-        sf.destroy();
-        $('.main').animate({
-            top: -500
-        }, 1000);
-        var audio = $('.song')[0];
-        audio.play();
+                    var audio = $('.song')[0];
+            if (audio) {
+                console.log("Audio element found:", audio); // Log debug
+
+                var playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(function() {
+                        console.log("Audio is playing"); // Log debug
+                    }).catch(function(error) {
+                        console.error("Error playing audio:", error); // Log debug
+                    });
+                }
+            } else {
+                console.error("Audio element not found"); // Log debug
+            }
+
 
         // Simpan status to sessionStorage
         sessionStorage.setItem('fromIndex2', 'true');
